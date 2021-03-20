@@ -1,0 +1,1 @@
+docker run --rm --name slate -p 4567:4567 -v F:\docker\slate\source:/srv/slate/source slatedocs/slate serve
