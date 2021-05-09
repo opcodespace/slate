@@ -7,7 +7,7 @@ language_tabs: # must be one of https://git.io/vQNgJ
 
 toc_footers:
   - <a href='https://global.automotivescloud.com/my-account'>Sign Up for a API Token</a>
-  - <a href='mailto:support@automotivescloud.com'>support@automotivescloud.com</a>
+  - <a href='mailto:global@automotivescloud.com'>global@automotivescloud.com</a>
 
 includes:
   - errors
@@ -23,7 +23,7 @@ Welcome to the Global Automotives Cloud API! You can use our API to access Vehic
 
 We have language bindings in Shell and PHP! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
 
-If you have any question or feedback, you are feel free to contact [Automotives Cloud](https://global.automotivescloud.com) or send e-mail to [support@automotivescloud.com](mailto:support@automotivescloud.com).
+If you have any question or feedback, you are feel free to contact [Automotives Cloud](https://global.automotivescloud.com) or send e-mail to [global@automotivescloud.com](mailto:global@automotivescloud.com).
 
 # Authentication
 
@@ -107,12 +107,7 @@ curl "https://global.automotivescloud.com/api/v1/vehicle" \
 ```json
 {
     "data": {
-        "general": {
-          // available data should be here
-        },
-        "others": {
-          // available data should be here
-        }
+        // Available data should be here...
     }
 }
 ```
@@ -164,150 +159,151 @@ it | BN071VN |
 ```json
 {
     "data": {
-        "general": {
-            "Description": "RENAULT SCÉNIC III",
-            "RegistrationYear": "2016",
-            "VehicleMake": "RENAULT",
-            "VehicleModel": "SCÉNIC III",
-            "EngineSize": "5",
-            "FuelType": "DIESEL",
-            "MakeDescription": "RENAULT",
-            "ModelDescription": "SCÉNIC III",
-            "Immobiliser": "",
-            "IndicativeValue": 0,
-            "DriverSide": "",
-            "BodyStyle": "MONOSPACE COMPACT",
-            "RegistrationDate": "2016-06-24",
-            "ImageUrl": "http://immatriculationapi.com/image.aspx/@UkVOQVVMVCBTQ8OJTklDIElJSQ==",
-            "VIN": "VF1JZ890H55864144"
-        },
-        "others": {
-            "FirstManufacturingYear": "2016",
-            "Transmission": "",
-            "FuelTypeCode": "D",
-            "BodyVersionCode": "",
-            "SafetyClassification": "",
-            "VersionTrim": "1.5 dCi 1461cm3 110cv ",
-            "VersionCode": "",
-            "MakeCode": "RE",
-            "ModelCode": "",
-            "ProductCode": "",
-            "BodyCode": "",
-            "SeatNumber": "5",
-            "FirstRegistrationDate": "24062016",
-            "BatteryIssues": "",
-            "ElectricVehicle": "",
-            "Type": "",
-            "TypeCode": "",
-            "ValueAsNew": "",
-            "RiskLevel": "",
-            "ManufacturerProtection": "",
-            "DynamicPower": "110",
-            "VehicleSegmentCode": ""
-        }
+        "VIN": "VF1JZ890H55864144",
+        "RegistrationDate": "2016-06-24",
+        "RegistrationYear": "2016",
+        "FirstRegistrationDate": "24062016",
+        "FirstManufacturingYear": "2016",
+        "Make": "RENAULT",
+        "MakeCode": "RE",
+        "MakeDescription": "RENAULT",
+        "Model": "SCÉNIC III",
+        "ModelCode": "",
+        "ModelDescription": "SCÉNIC III",
+        "Description": "RENAULT SCÉNIC III",
+        "EngineSize": "5",
+        "FuelType": "DIESEL",
+        "FuelTypeCode": "D",
+        "Immobiliser": "",
+        "IndicativeValue": 0,
+        "DriverSide": "",
+        "BodyStyle": "MONOSPACE COMPACT",
+        "BodyVersionCode": "",
+        "BodyCode": "",
+        "ImageUrl": "http://immatriculationapi.com/image.aspx/@UkVOQVVMVCBTQ8OJTklDIElJSQ==",
+        "Transmission": "MECANIQUE",
+        "Version": "1.5 dCi 1461cm3 110cv ",
+        "SafetyClassification": "",
+        "ProductCode": "",
+        "SeatNumber": "5",
+        "BatteryIssues": "",
+        "ElectricVehicle": "",
+        "ValueAsNew": "",
+        "RiskLevel": "",
+        "ManufacturerProtection": "",
+        "DynamicPower": "110",
+        "SegmentCode": "",
+        "KtypeId": "5853",
+        "EngineCC": "1461",
+        "Co2": "105",
+        "Cylinders": "4",
+        "CNIT": "M10RENVP472E768",
+        "Type": "VP",
+        "TypeCode": "",
+        "TypeAsEuropeanClassification": "Passenger Car",
+        "TypeCodeAsEuropeanClassification": [
+            "M1"
+        ]
     }
 }
 ```
 > Registration details of France
 
 
-### General
-Field | Description
---------- | -------
-Description |
-RegistrationYear |
-VehicleMake |
-VehicleModel |
-EngineSize |
-FuelType |
-MakeDescription |
-ModelDescription |
-Immobiliser |
-IndicativeValue |
-DriverSide |
-BodyStyle |
-RegistrationDate |
-ImageUrl |
-VIN |
+Field | Type | Description
+--------- | ------- | -------
+VIN | string |
+RegistrationDate | string |
+RegistrationYear | string |
+FirstRegistrationDate | string |
+FirstManufacturingYear | string |
+Make | string |
+MakeCode | string |
+MakeDescription | string |
+Model | string |
+ModelCode | string |
+ModelDescription | string |
+Description | string |
+EngineSize | string |
+FuelType | string |
+FuelTypeCode | string |
+Immobiliser | string |
+IndicativeValue | string |
+DriverSide | string |
+BodyStyle | string |
+BodyVersionCode | string |
+BodyCode | string |
+ImageUrl | string |
+Transmission | string |
+Version | string |
+SafetyClassification | string |
+ProductCode | string |
+SeatNumber | string |
+BatteryIssues | string |
+ElectricVehicle | string |
+ValueAsNew | string |
+RiskLevel | string |
+ManufacturerProtection | string |
+DynamicPower | string |
+SegmentCode | string |
+KtypeId | string |
+EngineCC | string |
+Co2 | string |
+Cylinders | string |
+CNIT | string |
+Type | string | As French Classification
+TypeCode | string | As French Classification
+TypeAsEuropeanClassification | string |
+TypeCodeAsEuropeanClassification | array | Frech classification is mapped with European Calssification according to this this documentation https://www.carte-grise.org/docs/Liste-Genres-et-Energies_12-06-2009.pdf
 
-
-### Others
-Field | Description
---------- | -------
-FirstManufacturingYear |
-Transmission |
-FuelTypeCode |
-BodyVersionCode |
-SafetyClassification |
-VersionTrim |
-VersionCode |
-MakeCode |
-ModelCode |
-ProductCode |
-BodyCode |
-SeatNumber |
-FirstRegistrationDate |
-BatteryIssues |
-ElectricVehicle |
-Type |
-TypeCode |
-ValueAsNew |
-RiskLevel |
-ManufacturerProtection |
-DynamicPower |
-VehicleSegmentCode |
 
 ## Italy
 
 ```json
 {
     "data": {
-        "general": {
-            "Description": "Peugeot 206",
-            "RegistrationYear": "2000",
-            "VehicleMake": "Peugeot",
-            "VehicleModel": "206",
-            "EngineSize": "14 cv (da 1119,2 a 1243,6 cc.)",
-            "FuelType": "Benzina",
-            "MakeDescription": "Peugeot",
-            "ModelDescription": "206",
-            "Immobiliser": "",
-            "VIN": "",
-            "ImageUrl": "http://www.targa.co.it/image.aspx/@UGV1Z2VvdCAyMDY=",
-            "NumberOfDoors": "",
-            "Version": "206 1.1 3p. Xr (08-2000)",
-            "ABS": "N",
-            "AirBag": "S",
-            "KType": "",
-            "PowerCV": "",
-            "PowerKW": "",
-            "PowerFiscal": ""
-        },
-        "others": []
+        "VIN": "",
+        "RegistrationYear": "2000",
+        "Description": "Peugeot 206",
+        "Make": "Peugeot",
+        "MakeDescription": "Peugeot",
+        "Model": "206",
+        "ModelDescription": "206",
+        "EngineSize": "14 cv (da 1119,2 a 1243,6 cc.)",
+        "FuelType": "Benzina",
+        "Immobiliser": "",
+        "ImageUrl": "http://www.targa.co.it/image.aspx/@UGV1Z2VvdCAyMDY=",
+        "NumberOfDoors": "",
+        "Version": "206 1.1 3p. Xr (08-2000)",
+        "ABS": "N",
+        "AirBag": "S",
+        "KType": "",
+        "PowerCV": "",
+        "PowerKW": "",
+        "PowerFiscal": ""
     }
 }
 ```
 >Registration details of Italy
 
-### General
-Field | Description
---------- | -------
-Description |
-RegistrationYear |
-VehicleMake |
-VehicleModel |
-EngineSize |
-FuelType |
-MakeDescription |
-ModelDescription |
-Immobiliser |
-ImageUrl |
-VIN |
-NumberOfDoors |
-Version |
-ABS |
-AirBag |
-KType |
-PowerCV |
-PowerKW |
-PowerFiscal |
+Field | Type | Description
+--------- | ------- | -------
+VIN | string |
+RegistrationYear | string |
+Description | string |
+Make | string |
+MakeDescription | string |
+Model | string |
+ModelDescription | string |
+EngineSize | string |
+FuelType | string |
+Immobiliser | string |
+ImageUrl | string |
+NumberOfDoors | string |
+Version | string |
+ABS | string |
+AirBag | string |
+KType | string |
+PowerCV | string |
+PowerKW | string |
+PowerFiscal | string |

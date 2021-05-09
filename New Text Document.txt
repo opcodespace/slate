@@ -1,1 +1,10 @@
 docker run --rm --name slate -p 4567:4567 -v F:\docker\slate\source:/srv/slate/source slatedocs/slate serve
+
+# deploy
+bundle exec middleman build --clean
+
+# get container id
+docker container ls
+
+# copy file
+docker cp cca3b621b2b2:/srv/slate/build F:\docker\slate
